@@ -6,24 +6,24 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SQRServiceTest {
     @Test
-    public void от200до300() {
+    public void shouldCalculateNumberSquaresMin200Max300() {
         SQRService service = new SQRService();
         int min = 200;
         int max = 300;
         int expected = 3;
 
-        int actual = service.CeilQuad(min, max);
+        int actual = service.ceilQuad(min, max);
         assertEquals(expected, actual);
     }
 
     @Test
-    public void от100до300() {
+    public void shouldCalculateNumberSquaresMin100Max300() {
         SQRService service = new SQRService();
         int min = 100;
         int max = 300;
         int expected = 8;
 
-        int actual = service.CeilQuad(min, max);
+        int actual = service.ceilQuad(min, max);
         assertEquals(expected, actual);
     }
 }
