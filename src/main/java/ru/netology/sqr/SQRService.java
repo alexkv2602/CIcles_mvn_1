@@ -13,7 +13,7 @@ public class SQRService {
             }
             counter++;
         }
-        ;
+        
         return counter;
 
 
